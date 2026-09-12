@@ -33,4 +33,31 @@ const myFunction = function(){
 }
 
 
-console.log(typeof bigNumber);
+console.log(typeof bigNumber); 
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack {Primitive} -> provide data copy, Heap{Non-Primitive} -> provide data reference
+
+let myYoutubename = "sagar-comedy-fun"
+
+let anothername = myYoutubename 
+anothername = "aasthakiduniya"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Sagar@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
